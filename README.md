@@ -1,4 +1,6 @@
 user_management
 ===============
 
-PHP, Symfony
+PHP, Symfony 1.4
+
+used in studying symfony 1.4 framework
