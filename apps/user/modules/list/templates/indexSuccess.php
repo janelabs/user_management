@@ -5,7 +5,7 @@
 
     <body>
         <div>
-            <p><h3>List of Users</h3></p>
+            <h3>List of Users</h3>
         </div>
     </body>
 </html>
