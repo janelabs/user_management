@@ -18,4 +18,9 @@
  */
 class InfoPeer extends BaseInfoPeer {
 
+    public static function getAllUser(){
+        $c = new Criteria();
+        return self::doSelect($c);
+    }
+
 } // InfoPeer

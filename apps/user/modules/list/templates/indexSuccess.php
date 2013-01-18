@@ -3,7 +3,8 @@
     use_javascript('user.js');
 ?>
 <div>
-    <button id="addUser">Add User</button>
+    <!--<button id="addUser">Add User</button>-->
+    <a href="../add/index">Add User</a>
 
     <h3>List of Users</h3>
 
@@ -17,14 +18,16 @@
         </tr>
         <?php
             if(!empty($user)):
-                ?>
-                <tr>
-                    <td>a</td>
-                    <td>b</td>
-                    <td>c</td>
-                    <td>d</td>
-                </tr>
-                <?php
+                foreach($user AS $u):
+                    ?>
+                    <tr>
+                        <td><?php echo $u->getName(); ?></td>
+                        <td><?php echo $u->getBirthdate(); ?></td>
+                        <td><?php echo $u->getAddress(); ?></td>
+                        <td>c</td>
+                    </tr>
+                    <?php
+                endforeach;
             else:
                 ?>
                 <tr>

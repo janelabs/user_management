@@ -17,6 +17,6 @@ class listActions extends sfActions
   */
   public function executeIndex(sfWebRequest $request)
   {
-
+      $this->user = InfoPeer::getAllUser();
   }
 }
