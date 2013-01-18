@@ -22,9 +22,9 @@
                         <td><?php echo $u->getBirthdate(); ?></td>
                         <td><?php echo $u->getAddress(); ?></td>
                         <td>
-                            <button>View</button>
-                            <button>Update</button>
-                            <button>Delete</button>
+                            <button class="view" id="<?php echo $u->getId(); ?>">View</button>
+                            <button class="update" id="<?php echo $u->getId(); ?>">Update</button>
+                            <button class="delete" id="<?php echo $u->getId(); ?>">Delete</button>
                         </td>
                     </tr>
                     <?php
