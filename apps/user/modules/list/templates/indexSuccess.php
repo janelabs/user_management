@@ -42,10 +42,3 @@
     </table>
     <!--LIST OF USERS -- END -->
 </div>
-
-<!-- SCRIPTS -->
-<script type="text/javascript">
-    $(function(){
-        User.initView();
-    });
-</script>
