@@ -3,7 +3,7 @@ use_javascript('jquery.js');
 use_javascript('user.js');
 ?>
 
-<form name="frmAdd" id="frmAdd" method="post" action="">
+<form name="frmAdd" id="frmAdd" method="post" action="../add/add">
 
     <label for="uname">Name: </label>
     <input type="text" id="uname" name="uname" /><br>
