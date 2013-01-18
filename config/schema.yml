@@ -1,0 +1,10 @@
+propel:
+  _attributes:
+    package: lib.model
+    defaultIdMethod: native
+  info:
+    _attributes: { phpName: Info }
+    id: { phpName: Id, type: SMALLINT, size: '5', primaryKey: true, autoIncrement: true, required: true }
+    name: { phpName: Name, type: VARCHAR, size: '100', required: true }
+    birthdate: { phpName: Birthdate, type: DATE, required: true }
+    address: { phpName: Address, type: VARCHAR, size: '500', required: true }
