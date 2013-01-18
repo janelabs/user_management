@@ -1,6 +1,8 @@
 user_management
 ===============
 
-PHP, Symfony 1.4, Propel
+tags: PHP, ORM
 
-used in studying symfony 1.4 framework
+Symfony 1.4 Framework, Propel
+
+used in studying symfony 1.4 framework with propel integration.
