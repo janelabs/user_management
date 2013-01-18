@@ -3,11 +3,8 @@
     use_javascript('user.js');
 ?>
 <div>
-    <!--<button id="addUser">Add User</button>-->
-    <a href="../add/index">Add User</a>
-
     <h3>List of Users</h3>
-
+    <a href="../add/index">Add User</a><br><br>
     <!--LIST OF USERS -- START -->
     <table id="userListTbl" border='1' cellpadding="4" cellspacing="0">
         <tr>
