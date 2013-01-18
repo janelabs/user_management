@@ -24,7 +24,11 @@
                         <td><?php echo $u->getName(); ?></td>
                         <td><?php echo $u->getBirthdate(); ?></td>
                         <td><?php echo $u->getAddress(); ?></td>
-                        <td>c</td>
+                        <td>
+                            <button>View</button>
+                            <button>Update</button>
+                            <button>Delete</button>
+                        </td>
                     </tr>
                     <?php
                 endforeach;
