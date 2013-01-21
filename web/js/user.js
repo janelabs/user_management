@@ -10,13 +10,27 @@ var User = {
             yearRange: (now.getFullYear()-60) +':'+ (now.getFullYear()-18)
         });
 
+        //add user
+        $('#addUser').button({
+            icons: { primary: "ui-icon-plus" }
+        });
+
+        //edit user
+        $('.editUser').button({
+            icons: { primary: "ui-icon-pencil" }
+        });
+
         //view user
-        $('.viewUser').click(function(){
+        $('.viewUser').button({
+            icons: { primary: "ui-icon-search" }
+        }).click(function(){
             window.location = "../view/index?id=" + $(this).attr('uid');
         });
 
         //delete user
-        $('.deleteUser').click(function(){
+        $('.deleteUser').button({
+            icons: { primary: "ui-icon-trash" }
+        }).click(function(){
             var ans = confirm("Are you sure you want to delete this user?");
             if(ans){
                 window.location = "../list/delete?id=" + $(this).attr('uid');

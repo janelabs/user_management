@@ -4,11 +4,19 @@
     use_javascript('user.js');
     use_stylesheet('ui-lightness/jquery-ui-1.10.0.custom.min.css');
 ?>
+<style>
+body button{
+    font-size: 11px !important;
+}
+body a{
+    font-size: 11px !important;
+}
+</style>
 <div>
     <h3>List of Users</h3>
-    <a href="../add/index">Add User</a><br><br>
+    <a href="../add/index" id="addUser">Add User</a><br><br>
     <!--LIST OF USERS -- START -->
-    <table id="userListTbl" border='1' cellpadding="4" cellspacing="0">
+    <table id="userListTbl" border='1' cellpadding="6" cellspacing="0">
         <tr>
             <th>Name</th>
             <th>Birth Date</th>
