@@ -7,3 +7,6 @@ body a{
 body input[type="submit"]{
     font-size: 11px !important;
 }
+body input[type="button"]{
+    font-size: 11px !important;
+}

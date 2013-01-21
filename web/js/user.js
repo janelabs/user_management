@@ -19,6 +19,8 @@ var User = {
             icons: { primary: "ui-icon-disk" }
         });
 
+        $('input[type="button"]').button();
+
         //edit user
         $('.editUser').button({
             icons: { primary: "ui-icon-pencil" }
