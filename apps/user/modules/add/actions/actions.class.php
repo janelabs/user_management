@@ -23,7 +23,7 @@ class addActions extends sfActions
     {
         $info = new Info();
         $info->setName($request->getParameter('uname'));
-        $info->setBirthdate($request->getParameter('bdate'));
+        $info->setBirthdate(date('Y-m-d', strtotime($request->getParameter('bdate'))));
         $info->setAddress($request->getParameter('address'));
         $info->save();
 

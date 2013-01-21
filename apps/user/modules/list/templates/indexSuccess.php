@@ -1,6 +1,8 @@
 <?php
     use_javascript('jquery.js');
+    use_javascript('jquery.custom.min.js');
     use_javascript('user.js');
+    use_stylesheet('ui-lightness/jquery-ui-1.10.0.custom.min');
 ?>
 <div>
     <h3>List of Users</h3>
@@ -14,6 +16,7 @@
             <th>Actions</th>
         </tr>
         <?php
+            print_r('list/index');
             if(!empty($user)):
                 foreach($user AS $u):
                     ?>
