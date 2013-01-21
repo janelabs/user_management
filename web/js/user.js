@@ -1,6 +1,7 @@
 var User = {
 
     initView: function(){
+        //for datepicker
         var now = new Date();
         $('#bdate').datepicker({
             changeMonth: true,

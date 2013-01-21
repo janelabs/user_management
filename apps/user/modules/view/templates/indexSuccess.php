@@ -17,7 +17,7 @@
 
     <p>
         <span>Address: </span>
-        <strong><?php echo $address; ?></strong>
+        <strong><?php echo ucwords($address); ?></strong>
     </p>
 
     <p>

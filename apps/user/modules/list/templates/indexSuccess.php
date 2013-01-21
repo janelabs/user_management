@@ -21,9 +21,9 @@
                 foreach($user AS $u):
                     ?>
                     <tr>
-                        <td><?php echo $u->getName(); ?></td>
+                        <td><?php echo ucwords($u->getName()); ?></td>
                         <td><?php echo date('F j, Y', strtotime($u->getBirthdate())); ?></td>
-                        <td><?php echo $u->getAddress(); ?></td>
+                        <td><?php echo ucwords($u->getAddress()); ?></td>
                         <td>
                             <button class="viewUser" uid="<?php echo $u->getId(); ?>">View</button>
                             <button class="deleteUser" uid="<?php echo $u->getId(); ?>">Delete</button>
