@@ -19,12 +19,10 @@
                     ?>
                     <tr>
                         <td><?php echo $u->getName(); ?></td>
-                        <td><?php echo $u->getBirthdate(); ?></td>
+                        <td><?php echo date('F j, Y', strtotime($u->getBirthdate())); ?></td>
                         <td><?php echo $u->getAddress(); ?></td>
                         <td>
-                            <button class="view" id="<?php echo $u->getId(); ?>">View</button>
-                            <button class="update" id="<?php echo $u->getId(); ?>">Update</button>
-                            <button class="delete" id="<?php echo $u->getId(); ?>">Delete</button>
+                            <a href="../view/index?id=<?php echo $u->getId(); ?>">View</a>
                         </td>
                     </tr>
                     <?php
