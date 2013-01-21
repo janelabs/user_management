@@ -18,6 +18,8 @@ var User = {
         //edit user
         $('.editUser').button({
             icons: { primary: "ui-icon-pencil" }
+        }).click(function(){
+            window.location = "../edit/index?id=" + $(this).attr('uid');
         });
 
         //view user
