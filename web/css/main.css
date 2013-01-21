@@ -4,3 +4,6 @@ body button{
 body a{
     font-size: 11px !important;
 }
+body input[type="submit"]{
+    font-size: 11px !important;
+}
