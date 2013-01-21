@@ -2,7 +2,7 @@
     use_javascript('jquery.js');
     use_javascript('jquery.custom.min.js');
     use_javascript('user.js');
-    use_stylesheet('ui-lightness/jquery-ui-1.10.0.custom.min');
+    use_stylesheet('ui-lightness/jquery-ui-1.10.0.custom.min.css');
 ?>
 <div>
     <p>

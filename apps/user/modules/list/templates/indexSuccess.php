@@ -2,7 +2,7 @@
     use_javascript('jquery.js');
     use_javascript('jquery.custom.min.js');
     use_javascript('user.js');
-    use_stylesheet('ui-lightness/jquery-ui-1.10.0.custom.min');
+    use_stylesheet('ui-lightness/jquery-ui-1.10.0.custom.min.css');
 ?>
 <div>
     <h3>List of Users</h3>
@@ -25,6 +25,7 @@
                         <td><?php echo ucwords($u->getAddress()); ?></td>
                         <td>
                             <button class="viewUser" uid="<?php echo $u->getId(); ?>">View</button>
+                            <button class="editUser" uid="<?php echo $u->getId(); ?>">Edit</button>
                             <button class="deleteUser" uid="<?php echo $u->getId(); ?>">Delete</button>
                         </td>
                     </tr>
