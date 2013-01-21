@@ -24,3 +24,9 @@
         <input type="button" value="Back" onclick=" User.goHome(); " />
     </p>
 </div>
+
+<script type="text/javascript">
+    $(function(){
+        $('input[type="button"]').button();
+    });
+</script>
