@@ -22,7 +22,8 @@
                         <td><?php echo date('F j, Y', strtotime($u->getBirthdate())); ?></td>
                         <td><?php echo $u->getAddress(); ?></td>
                         <td>
-                            <a href="../view/index?id=<?php echo $u->getId(); ?>">View</a>
+                            <button class="viewUser" uid="<?php echo $u->getId(); ?>">View</button>
+                            <button class="deleteUser" uid="<?php echo $u->getId(); ?>">Delete</button>
                         </td>
                     </tr>
                     <?php
@@ -40,3 +41,9 @@
     </table>
     <!--LIST OF USERS -- END -->
 </div>
+
+<script type="text/javascript">
+    $(function(){
+        User.initView();
+    });
+</script>

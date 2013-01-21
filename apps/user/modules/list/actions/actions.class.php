@@ -16,6 +16,12 @@ class listActions extends sfActions
     */
     public function executeIndex(sfWebRequest $request)
     {
-      $this->user = InfoPeer::getAllUser();
+        $this->user = InfoPeer::getAllUser();
+    }
+
+    public function executeDelete(sfWebRequest $request)
+    {
+        InfoPeer::doDelete($request->getParameter('id'));
+        $this->redirect('list/index');
     }
 }
