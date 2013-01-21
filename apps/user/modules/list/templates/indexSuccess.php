@@ -16,7 +16,6 @@
             <th>Actions</th>
         </tr>
         <?php
-            print_r('list/index');
             if(!empty($user)):
                 foreach($user AS $u):
                     ?>
