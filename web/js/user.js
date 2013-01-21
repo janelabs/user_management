@@ -1,6 +1,13 @@
 var User = {
 
     initView: function(){
+        $('.tbl tr:odd').css({
+            "background-color": '#f0e68c'
+        });
+        $('.tbl tr:even').css({
+            "background-color": '#FFF0C7'
+        });
+
         //for datepicker
         var now = new Date();
         $('#bdate').datepicker({
@@ -15,10 +22,12 @@ var User = {
             icons: { primary: "ui-icon-plus" }
         });
 
+        //button style submit
         $('input[type="submit"]').button({
             icons: { primary: "ui-icon-disk" }
         });
 
+        //button style button
         $('input[type="button"]').button();
 
         //edit user

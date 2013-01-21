@@ -8,7 +8,7 @@
     <h3>List of Users</h3>
     <a href="../add/index" id="addUser">Add User</a><br><br>
     <!--LIST OF USERS -- START -->
-    <table id="userListTbl" border='1' cellpadding="6" cellspacing="0">
+    <table class="tbl" id="userListTbl" border='1'>
         <tr>
             <th>Name</th>
             <th>Birth Date</th>

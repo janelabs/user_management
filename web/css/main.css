@@ -10,3 +10,32 @@ body input[type="submit"]{
 body input[type="button"]{
     font-size: 11px !important;
 }
+
+.tbl{
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+}
+.tbl th{
+    background-color: #FFBB45;
+}
+.tbl th:first-child{
+    border-top-left-radius: 15px;
+}
+.tbl th:last-child{
+    border-top-right-radius: 15px;
+}
+.tbl th, td{
+    border: 0px;
+    width: 215px;
+    text-align: center;
+}
+.tbl tr{
+    height: 35px !important;
+}
+.tbl tr:last-child td:first-child{
+    border-bottom-left-radius: 15px;
+}
+.tbl tr:last-child td:last-child{
+    border-bottom-right-radius: 15px;
+}
