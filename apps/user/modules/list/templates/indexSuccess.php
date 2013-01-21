@@ -4,14 +4,6 @@
     use_javascript('user.js');
     use_stylesheet('ui-lightness/jquery-ui-1.10.0.custom.min.css');
 ?>
-<style>
-body button{
-    font-size: 11px !important;
-}
-body a{
-    font-size: 11px !important;
-}
-</style>
 <div>
     <h3>List of Users</h3>
     <a href="../add/index" id="addUser">Add User</a><br><br>
