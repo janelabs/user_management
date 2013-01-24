@@ -15,6 +15,7 @@
             <th>Address</th>
             <th>Actions</th>
         </tr>
+        
         <?php
             if(!empty($user)):
                 foreach($user AS $u):
